@@ -1,0 +1,391 @@
+<html>
+    <head>
+            <script src="jquery-3.2.1.min.js"></script>
+            
+                <script>
+                      
+                $(document).ready(function(){
+                    $("#speakup1").hide();
+                    $("#read1").hide();
+                    $("#liked1").hide();
+                    $("#speaker").hide();
+                    $("#reader").hide();
+                    $("#liker").hide();
+                    
+                    $("#speak").mouseover(function(){
+
+                        $("#speakup1").show(500);
+                        $("#read1").hide();
+                        $("#liked1").hide();
+                    });
+
+                     $("#speak").mouseout(function(){
+
+                        $("#speakup1").hide(500);
+                    $("#read1").hide();
+                    $("#liked1").hide();
+                    });
+
+
+
+$("#read").mouseover(function(){
+
+$("#read1").show(500);
+$("#speakup1").hide();
+
+$("#liked1").hide();
+});
+
+$("#read").mouseout(function(){
+
+$("#read1").hide(500);
+$("#speakup1").hide();
+$("#liked1").hide();
+});
+
+
+$("#bac1").click(function()
+{
+     $("#speaker").hide(500);
+     $("#speakup1").hide();
+                    $("#read1").hide();
+                    $("#liked1").hide();
+                    $("#speak").show(500);
+                    $("#read").show(500);
+                    $("#liked").show(500);
+});
+
+
+$("#sub1").click(function()
+{
+     $("#speaker").hide(500);
+     $("#speakup1").hide();
+                    $("#read1").hide();
+                    $("#liked1").hide();
+                    $("#speak").show(500);
+                    $("#read").show(500);
+                    $("#liked").show(500);
+});
+
+
+
+
+$("#bac2").click(function()
+{
+     $("#reader").hide(500);
+     $("#speakup1").hide();
+                    $("#read1").hide();
+                    $("#liked1").hide();
+                    $("#speak").show(500);
+                    $("#read").show(500);
+                    $("#liked").show(500);
+});
+
+
+$("#sub2").click(function()
+{
+     $("#reader").hide(500);
+     $("#speakup1").hide();
+                    $("#read1").hide();
+                    $("#liked1").hide();
+                    $("#speak").show(500);
+                    $("#read").show(500);
+                    $("#liked").show(500);
+});
+
+
+
+$("#bac3").click(function()
+{
+     $("#liker").hide(500);
+     $("#speakup1").hide();
+                    $("#read1").hide();
+                    $("#liked1").hide();
+                    $("#speak").show(500);
+                    $("#read").show(500);
+                    $("#liked").show(500);
+});
+
+
+$("#sub3").click(function()
+{
+     $("#liker").hide(500);
+     $("#speakup1").hide();
+                    $("#read1").hide();
+                    $("#liked1").hide();
+                    $("#speak").show(500);
+                    $("#read").show(500);
+                    $("#liked").show(500);
+});
+
+
+
+
+
+
+
+$("#liked").mouseover(function(){
+   
+    $("#liked1").show(500);
+$("#read1").hide();
+$("#speakup1").hide();
+
+
+});
+
+$("#liked").mouseout(function(){
+    $("#liked1").hide(500);
+$("#read1").hide();
+$("#speakup1").hide();
+
+});
+              
+
+
+$("#speak").click(function(){
+
+                    $("#speakup1").hide();
+                    $("#read1").hide();
+                    $("#liked1").hide();
+                    $("#speak").hide();
+                    $("#read").hide();
+                    $("#liked").hide();
+                    $("#liker").hide();
+                    $("#reader").hide();
+                    $("#speaker").show(500);
+
+});
+
+
+$("#read").click(function(){
+
+$("#speakup1").hide();
+$("#read1").hide();
+$("#liked1").hide();
+$("#speak").hide();
+$("#read").hide();
+$("#liked").hide();
+$("#speaker").hide();
+$("#liker").hide();
+$("#reader").show(500);
+
+});
+
+
+
+$("#liked").click(function(){
+
+$("#speakup1").hide();
+$("#read1").hide();
+$("#liked1").hide();
+$("#speak").hide();
+$("#read").hide();
+$("#liked").hide();
+$("#speaker").hide();
+$("#reader").hide();
+$("#liker").show(500);
+
+});
+
+
+
+
+});
+    </script>
+    </head>
+  
+  
+  
+  <style>
+
+       button {
+                
+                  font-family: Verdana, Geneva, Tahoma, sans-serif, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    
+                  padding: 5px 30px ;
+                  color:#3498db;
+                  background: #fbfcfb;
+                  border: 2px solid #3498db;
+                 width:60%;
+                  margin-left:22%;
+                  border-radius: 7px;
+                  
+                  
+                  
+                  }
+
+            button:hover{
+                 
+                  color:rgb(253, 249, 249);
+                  transition:0.3s;
+                  background: #3498db;
+                 
+            }
+
+            
+ 
+  #footer 
+  {
+    font-family: Verdana, Geneva, Tahoma, sans-serif, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    
+    background-color: #3498db;
+        color: white;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+ 
+
+ }
+
+.headings
+{
+    color: #2e86c1;
+}
+
+  #header
+  {
+      width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    
+    background-color: #3498db;
+    color: white;
+    padding: 1 0 1 0%;
+    
+  }
+
+  #main
+  {
+    position: fixed;
+      width: 100%;
+      margin-top: 9%;
+      margin-left:23%; 
+      
+      
+      
+  }
+  #speak
+  {
+      margin-left: 6%;
+  }
+  
+  #read
+  {
+      margin-left: 6%;
+  }
+
+   #liked
+  {
+      margin-left: 6%;
+  }
+
+   #speaker
+  {
+      position: fixed;
+    border-radius: 25px;
+    border: 2px solid #3498db;
+    margin-top:5%;
+    margin-left:22%; 
+    padding: 4%;
+  } 
+
+#reader
+{
+    position: fixed;
+    border-radius: 25px;
+    border: 2px solid #3498db;
+    margin-top:5%;
+    margin-left:22%; 
+    padding: 4%;
+}
+
+#liker
+{
+    position: fixed;
+    border-radius: 25px;
+    border: 2px solid #3498db;
+    margin-top:5%;
+    margin-left:22%; 
+    padding: 4%;
+}
+textarea {
+    border-radius: 25px;
+    border: 2px solid #3498db;
+    padding: 15px;
+    width: 500px;
+  height: 100px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    
+    color: #3498db;
+    
+}
+
+  #area
+  {
+    font-family: Verdana, Geneva, Tahoma, sans-serif, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    
+    color: #3498db;
+    padding: 15px;
+    border-radius: 25px;
+    border: 2px solid #3498db;
+  }
+  
+  body
+  {
+    font-family: Verdana, Geneva, Tahoma, sans-serif, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    
+    color: #3498db;
+  }
+  a,u
+  {
+    text-decoration: none;
+  }
+  </style>   
+
+
+    <body>
+            <div id="header" >
+                 <h1 align="center">THE FORUM</h1>
+            </div>
+            
+
+           
+
+            <div id="main">
+                    
+                  <a href="/uploadingcontent">  <img id="speak"  src="speak.jpeg" height="20%" width="10%">
+                    </a><a href="/readingcontent"><img id="read"  src="read.jpeg" height="20%" width="10%">
+                    </a><a href="upvotedcontent"><img id="liked" src="liked.jpeg" height="20%" width="10%">
+                 </a>
+            </div>
+
+<br><br>
+<br><br>
+<br><br>
+<br><br><br><br>
+<br><br>
+<br><br>
+<br><br>
+
+            <div id="speakup1"    class="headings" >
+                <h1 align="center">SPEAK UP YOUR THOUGHTS</h1>
+           </div>
+        
+
+           <div id="read1" class="headings">
+                <h1 align="center">READ UP THOUGHTS</h1>
+           </div>
+        
+
+           <div id="liked1" class="headings">
+                <h1 align="center">DAILY LIKED THOUGHTS</h1>
+           </div>
+
+            
+            
+            
+            <div id="footer">
+            <h3 align="center">SHOAIB SHAIKH PRODUCTIONS</h3>
+            </div>
+
+         
+
+    </body>
+
+
+</html>
+    

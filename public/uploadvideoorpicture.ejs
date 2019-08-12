@@ -1,0 +1,350 @@
+<html>
+    <head>
+            <script src="jquery-3.2.1.min.js"></script>
+            
+                <script>
+                      
+                $(document).ready(function(){
+                    $("#speakup1").hide();
+                    $("#read1").hide();
+                    $("#liked1").hide();
+                    $("#speaker").hide();
+                    $("#reader").hide();
+                    $("#liker").hide();
+                    
+                    $("#speak").mouseover(function(){
+
+                        $("#speakup1").fadeIn(500);
+                        $("#read1").hide();
+                        $("#liked1").hide();
+                    });
+
+                     $("#speak").mouseout(function(){
+
+                        $("#speakup1").fadeOut(500);
+                    $("#read1").hide();
+                    $("#liked1").hide();
+                    });
+
+
+
+$("#read").mouseover(function(){
+
+$("#read1").fadeIn(500);
+$("#speakup1").hide();
+
+$("#liked1").hide();
+});
+
+$("#read").mouseout(function(){
+
+$("#read1").fadeOut(500);
+$("#speakup1").hide();
+$("#liked1").hide();
+});
+
+
+
+
+
+
+});
+    </script>
+    </head>
+  
+  
+  
+  <style>
+
+       button {
+                
+                  font-family: Verdana, Geneva, Tahoma, sans-serif, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    
+                  padding: 5px 30px ;
+                  color:#3498db;
+                  background: #fbfcfb;
+                  border: 2px solid #3498db;
+                 width:60%;
+                  margin-left:22%;
+                  border-radius: 7px;
+                  
+                  
+                  
+                  }
+
+            button:hover{
+                 
+                  color:rgb(253, 249, 249);
+                  transition:0.3s;
+                  background: #3498db;
+                 
+            }
+
+            
+ 
+  #footer 
+  {
+    font-family: Verdana, Geneva, Tahoma, sans-serif, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    
+    background-color: #3498db;
+        color: white;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+ 
+
+ }
+
+.headings
+{
+    color: #2e86c1;
+    
+}
+
+  #header
+  {
+      width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    
+    background-color: #3498db;
+    color: white;
+    padding: 1 0 1 0%;
+    
+  }
+
+  #main
+  {
+    position: fixed;
+      width: 100%;
+      margin-top: 9%;
+      margin-left:23%; 
+      
+      
+      
+  }
+  #speak
+  {
+      margin-left: 13%;
+  }
+  
+  #read
+  {
+      margin-left: 6%;
+  }
+
+   #liked
+  {
+      margin-left: 6%;
+  }
+
+   #speaker
+  {
+      position: fixed;
+    border-radius: 25px;
+    border: 2px solid #3498db;
+    margin-top:5%;
+    margin-left:22%; 
+    padding: 4%;
+  } 
+
+#reader
+{
+    position: fixed;
+    border-radius: 25px;
+    border: 2px solid #3498db;
+    margin-top:5%;
+    margin-left:22%; 
+    padding: 4%;
+}
+
+#liker
+{
+    position: fixed;
+    border-radius: 25px;
+    border: 2px solid #3498db;
+    margin-top:5%;
+    margin-left:22%; 
+    padding: 4%;
+}
+textarea {
+    border-radius: 25px;
+    border: 2px solid #3498db;
+    padding: 15px;
+    width: 500px;
+  height: 100px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    
+    color: #3498db;
+    
+}
+
+a, u {
+    text-decoration: none;
+}
+
+  #area
+  {
+    font-family: Verdana, Geneva, Tahoma, sans-serif, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    
+    color: #3498db;
+    padding: 15px;
+    border-radius: 25px;
+    border: 2px solid #3498db;
+  }
+  
+  body
+  {
+    font-family: Verdana, Geneva, Tahoma, sans-serif, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    
+    color: #3498db;
+  }
+  </style>   
+
+
+    <body>
+            <div id="header" >
+                 <h1 align="center">THE FORUM</h1>
+            </div>
+            
+
+           
+
+            <div id="main">
+                    
+                    <a href="/upload_video"><img id="speak"  src="video.jpg" height="20%" width="10%" formaction="/upload_video">
+                    </a><a href="/upload_picture"><img id="read"  src="pictures.jpg" height="20%" width="10%" formaction="/upload_picture">
+                  </a>
+                 
+            </div>
+
+<br><br>
+<br><br>
+<br><br>
+<br><br><br><br>
+<br><br>
+<br><br>
+<br><br>
+
+            <div id="speakup1"    class="headings" >
+                   
+                <h1 align="center">You’ve probably got a device on you that can shoot decent video, so what’s stopping you?</h1>
+           </div>
+        
+
+           <div id="read1" class="headings">
+                <h1 align="center">What happens inside your mind can happen inside a camera!</h1>
+           </div>
+        
+
+           <div id="liked1" class="headings">
+                <h1 align="center">DAILY LIKED THOUGHTS</h1>
+           </div>
+
+            
+            <form action="/speak" method="POST">
+            <div id="speaker">
+
+              
+                <table>
+                <tr>
+                <td>
+                <b>Name</b>
+                </td>
+                <td>
+               <input type="text" id="area">
+                </td>
+                </tr>
+                <tr>
+                <td>
+                <b>Thoughts</b>
+                </td>
+                <td>
+                        <textarea></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><button id="sub1"><b>SUBMIT</button></td>  
+                   
+            </tr>       
+            <tr>
+                    <td colspan="2"><button id="bac1"><b>BACK</button></td>  
+                       
+                </tr>  
+            </table>
+              
+
+            </div>
+            </form>
+
+            <form action="/read" method="POST">
+            <div id="reader">
+
+              
+                    <table>
+                    <tr>
+                    <td>
+                    <b>Name</b>
+                    </td>
+                    <td>
+                   <input type="text" id="area">
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>
+                    <b>Thoughts</b>
+                    </td>
+                    <td>
+                            <textarea></textarea>
+                    </td>
+                </tr>
+                    
+                <tr>
+                        <td colspan="2"><button id="bac2"><b>BACK</button></td>  
+                           
+                    </tr>  
+                </table>
+                  
+    
+                </div>
+                </form>
+
+
+                <form action="/speak" method="POST">
+
+                <div id="liker">
+
+              
+                        <table>
+                        <tr>
+                        <td>
+                        <b>Name</b>
+                        </td>
+                        <td>
+                       <input type="text" id="area">
+                        </td>
+                        </tr>
+                        <tr>
+                        <td>
+                        <b>Thoughts</b>
+                        </td>
+                        <td>
+                                <textarea></textarea>
+                        </td>
+                    </tr>
+                         
+                    <tr>
+                            <td colspan="2"><button id="bac3"><b>BACK</button></td>  
+                               
+                        </tr>  
+                    </table>
+                      
+        
+                    </div>
+                </form>
+            
+            <div id="footer">
+            <h3 align="center">SHOAIB SHAIKH PRODUCTIONS</h3>
+            </div>
+
+         
+
+    </body>
+
+
+</html>
+    

@@ -1,0 +1,437 @@
+<html>
+    <head>
+            <script src="jquery-3.2.1.min.js"></script>
+            <script src="jquery-ui.min.js"></script>
+            
+            
+                 <style>
+
+
+                  .bolds
+                  {
+                    
+                    color: #3498db;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    
+                    font-weight: 786;
+                    border: 1px solid #3498db;
+                    border-radius: 7px;
+                    padding: 0.5% 1% 1% 0.5%;
+                  }
+                  .bolds:hover
+                  {
+                    background: #3498db;
+                    transition: 500ms;
+                    color: white;
+                    
+
+                  }
+                   #vid_section
+                   {
+                    font-family: Verdana, Geneva, Tahoma, sans-serif, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    
+                  padding: 5px 15% ;
+                  color:#3498db;
+                  background: #fbfcfb;
+                  
+                 width:30%;
+                 height: 25%;
+                  margin: 5% 0% 0% 20% ;
+                  border-radius: 7px;
+                   }
+                  
+
+                   #pic_section
+                   {
+                    font-family: Verdana, Geneva, Tahoma, sans-serif, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    
+                  padding: 5px 19% ;
+                  color:#3498db;
+                  background: #fbfcfb;
+                  
+                 width:25%;
+                 height: 20%;
+                  margin: 5% 0% 0% 19.8% ;
+                  border-radius: 7px;
+                   }
+                   
+                    #disp_picture
+                     {
+                      font-family: Verdana, Geneva, Tahoma, sans-serif, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    
+                 
+                  color:#3498db;
+                  background: #fbfcfb;
+                  
+                  width:100%;
+                 height: 80%;
+                
+                  
+                  
+                     }
+
+                     #disp_picture:hover
+                    {
+                    color:rgb(253, 249, 249);
+                  transition:0.3s;
+                  background: #3498db;
+                  }    
+
+           video {
+            font-family: Verdana, Geneva, Tahoma, sans-serif, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    
+                  
+                  color:#3498db;
+                  background: #fbfcfb;
+                 
+                 width:100%;
+                 height: 80%;
+                 
+                  
+                  
+           }      
+              
+
+        table
+        {
+           font-family: Verdana, Geneva, Tahoma, sans-serif, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    
+                 
+                  color:#3498db;
+                  background: #fbfcfb;
+                  border: 2px solid #3498db;
+                 
+                
+                  
+                  border-radius: 7px;
+        };
+        table:hover
+           {
+            color:rgb(253, 249, 249);
+                  transition:0.3s;
+                  background: #3498db;
+           }    
+    
+
+    #file
+    {
+        font-family: Verdana, Geneva, Tahoma, sans-serif, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    
+                  padding: 5px 30px ;
+                  color:#3498db;
+                  background: #fbfcfb;
+                  border: 2px solid #3498db;
+                 width:60%;
+                  margin-left:22%;
+                  border-radius: 7px;
+                  margin-top: 10%;
+                  
+                  
+    }
+
+    #file:hover{
+                 
+                 color:rgb(253, 249, 249);
+                 transition:0.3s;
+                 background: #3498db;
+                
+           }
+ 
+  #footer 
+  {
+    font-family: Verdana, Geneva, Tahoma, sans-serif, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    
+    background-color: white;
+        color: white;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border: 2px solid #3498db;
+  padding-left:44%;
+ 
+
+ }
+
+button{
+  background: transparent;
+  border: #fbfcfb
+};
+.headings
+{
+    color: #2e86c1;
+}
+
+  #header
+  {
+      width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    
+    background-color: #3498db;
+    color: white;
+    padding: 1 0 1 0%;
+   top:0;
+   left: 0;
+    
+   position: fixed;
+    
+  }
+
+  #main
+  {
+    position: fixed;
+      width: 100%;
+      margin-top: 9%;
+      margin-left:23%; 
+      
+      
+      
+  }
+  #speak
+  {
+      margin-left: 6%;
+  }
+  
+  #read
+  {
+      margin-left: 6%;
+  }
+
+   #liked
+  {
+      margin-left: 6%;
+  }
+
+   #speaker
+  {
+      position: fixed;
+    border-radius: 25px;
+    border: 2px solid #3498db;
+    margin-top:5%;
+    margin-left:22%; 
+    padding: 4%;
+  } 
+
+#reader
+{
+    position: fixed;
+    border-radius: 25px;
+    border: 2px solid #3498db;
+    margin-top:5%;
+    margin-left:22%; 
+    padding: 4%;
+}
+
+#liker
+{
+    position: fixed;
+    border-radius: 25px;
+    border: 2px solid #3498db;
+    margin-top:5%;
+    margin-left:22%; 
+    padding: 4%;
+}
+textarea {
+    border-radius: 25px;
+    border: 2px solid #3498db;
+    padding: 15px;
+    width: 500px;
+  height: 100px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    
+    color: #3498db;
+    
+}
+
+  #area
+  {
+    font-family: Verdana, Geneva, Tahoma, sans-serif, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    
+    color: #3498db;
+    padding: 15px;
+    border-radius: 25px;
+    border: 2px solid #3498db;
+  }
+  
+  body
+  {
+    font-family: Verdana, Geneva, Tahoma, sans-serif, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;    
+    color: #3498db;
+  }
+
+#video
+{
+    margin-top:2%;
+    position: fixed;
+}
+#pictures
+{
+    margin-top:2%;
+    position: fixed;
+}
+  </style>   
+
+<script>
+    $(document).ready(function(){
+        $('#pic_section').hide();
+        $('#video').hide();
+        
+        $('#pictures').click(function(){
+            $('#vid_section').hide()
+            $('#pictures').hide();
+            $('#video').fadeIn(500);
+            $('#pic_section').show('slide',{direction:'right'},500);
+            
+
+        });
+        $('#video').click(function(){
+            $('#video').hide();
+            $('#pic_section').hide()
+            
+           
+            $('#vid_section').show('slide',{direction:'left'},200);
+            $('#pictures').fadeIn(500);
+            
+
+        });
+        
+        
+                  
+        
+    });
+    
+</script>
+
+
+    <body>
+            <div id="header" >
+                    <h1 align="center">THE FORUM</h1>
+            </div>
+            <br><br><br><br>
+            
+            <img   width="70" height="70" src="video.jpg" id="video"/>
+            <img   width="70" height="70" src="pictures.jpg" id="pictures"/>
+            
+            <div id="vid_section">
+                <%videos.forEach(function(v){%>
+             <table>
+               <tr>
+                 <td>
+                    <video   controls>
+                        <source src="<%=v.vname%>"  type="video/mp4">
+                    </video>
+                    </td>
+               </tr>
+              
+               <tr>
+                  <td >
+                 <form method="POST" action="/like_video">
+                  <%if(v.likes==0){%>  
+                    <button type="submit"  name="likebutton" value="<%=v.vname%>">
+
+                    <img   width="38" height="38" src="bl.png" id="image_votes" />   
+                  </button>
+                  <%}else
+                  {%>  
+                    <button type="submit"  name="likebutton" value="<%=v.vname%>" disabled>
+                    <img   width="38" height="38" src="al.png" id="image_votes" />  
+                  </button>
+                    <%}%>
+                  
+                    <b class="bolds">LIKES               <%=v.likes%></b>
+                   
+                 </form>
+                 
+                 <form method="POST" action="/upvote_video">
+
+                    
+                     
+                      <% if(v.upvotes==0){ %>
+                        <button type="submit"  name="trendbutton" value="<%=v.vname%>">
+                      <img   width="38" height="38" src="beforeUV.png" id="image_votes" />
+                    </button>
+                      <%}
+                      else
+                      {
+                      %>
+                      <button type="submit"  name="trendbutton" value="<%=v.vname%>" disabled>
+                      <img   width="38" height="38" src="afterUV.png" id="image_votes" />
+                    </button>
+                      <%}%>
+                      
+                    
+                      
+                      
+                  
+                      <b class="bolds">upvotes               <%=v.upvotes%></b>   
+                
+             
+                </form>  
+                </td>
+               
+                </tr>
+              
+                </table>
+             
+
+
+              
+                  
+
+
+
+                <br><br>
+                <%})%>
+              </div>
+              
+              
+            
+              
+            <div class="pic_section" id="pic_section">
+                <%pictures.forEach(function(p){%>
+                    
+                    
+                        <table>
+                          <tr>
+                            <td>
+
+                              
+                                <img  id="disp_picture" src="<%=p.pname%>"/>
+                               </td>
+                          </tr>
+                          <tr>
+                            <td>
+                                <form method="POST" action="/like_image">
+                                  <%if(p.likes==0){%>
+                                <button type="submit"  name="likeimagebutton" value="<%=p.pname%>">
+                                    <img   width="38" height="38" src="bl.png" id="image_votes" />
+                                  </button>
+                                  <b class="bolds">LIKES         <%=p.likes%></b>
+                                  <%}else{%>
+                                    <button type="submit"  name="likeimagebutton" value="<%=p.pname%>" disabled>
+                                        <img   width="38" height="38" src="al.png" id="image_votes" />
+                                      </button>
+                                      <b class="bolds">LIKES         <%=p.likes%></b>  <%}%>
+                                  </form>
+                                  <form method="POST" action="/upvote_image">
+                                    <%if(p.upvotes==0){%>
+                                  <button type="submit"  name="upvoteimagebutton" value="<%=p.pname%>">
+                               <img   width="38" height="38" src="beforeUV.png" />
+                              </button>
+                              <b class="bolds">upvotes               <%=p.upvotes%></b>   
+                              <%}else{%>
+                                <button type="submit"  name="upvoteimagebutton" value="<%=p.pname%>" disabled>
+                                    <img   width="38" height="38" src="afterUV.png" />
+                                   </button>
+                                   <b class="bolds">upvotes               <%=p.upvotes%></b>   <%}%>
+                            </form>
+                           </td>
+                          
+                           </tr>
+                           </table>
+                         
+
+                           <br><br>
+                           <%})%>    
+                    
+            </div>
+             
+              
+                   
+            
+      
+           
+    </body>
+
+
+</html>
+    
